@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple ToDo App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>My ToDo List</h1>
+    <input type="text" id="taskInput" placeholder="Add new task..." />
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList"></ul>
+  </div>
+
+
+  <div id="confirmBox" class="confirm-box hidden">
+    <p>Are you sure you want to delete this task?</p>
+    <button onclick="confirmDelete(true)">Yes</button>
+    <button onclick="confirmDelete(false)">No</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
